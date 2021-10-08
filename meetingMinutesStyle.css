@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(13, 241, 101);
+    border-radius: 2px;
+    align-self: center;
+    padding: 4pt;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+/* Nody background is green to make black text easier to read */
+
+div {
+    margin: 30pt 3pt 3pt 3pt;
+}
+
+h1 {
+    margin: auto;
+}
