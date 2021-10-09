@@ -7,13 +7,107 @@ body {
     margin-bottom: 2px;
     margin-left: 2px;
     margin-bottom: 2px;
+    padding: 2% 2% 2% 2%;
+    border-style: dotted;
+    border-color: blue;
+    border-width: thin;
+    display: inline;
 }
-/* Nody background is green to make black text easier to read */
+/*Body background is green to make black text easier to read */
+
+@font-face {
+    font-family: NotoSansDisplay;
+    src: url(NotoSansDisplay/NotoSansDisplay-Regular.ttf);
+}
+    
+@media only screen and (max-width: device) {
+    body {
+      background-color: lightblue;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+.form{
+    color: black;
+    display: flexbox;
+    flex-direction: column-reverse;
+    flex-grow: initial;
+    flex-wrap: nowrap;
+}
+
+* {
+    font-family: NotoSansDisplay;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    font-family: helvetica; 
+}
+
+span ~ div {
+    color: black;
+}
+
+li:first-of-type + li {
+    color: red;
+  }
+
+li {
+    list-style-type: disc;
+}
+  
+li li {
+    list-style-type: square;
+}
+
+div > ul, ol {
+    background-color: white;
+}
 
 div {
     margin: 30pt 3pt 3pt 3pt;
+    padding-left: 3mm;
+    padding-right: 3mm;
+    padding-top: 3mm;
+    padding-bottom: 3mm;
+    color: tomato;
+    text-decoration: wavy;
+    text-align: justify;
+    display: inline-block;
+    position: relative;
+    display: grid;
+    grid-area: span;
+    grid-auto-flow: dense;
+    grid-row: initial;
+}
+
+a[href="mailto:n1sharma@ucsd.edu"] {
+    color: rgb(45, 2, 236);
+  }
+
+#video {
+    padding: 5% 5% 5% 5%;
+    align-self: center;
+    align-content: center;
+    margin-left: auto;
+    align-items: center;
 }
 
 h1 {
     margin: auto;
+    position: sticky;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+a:active {
+    color: yellow;
 }
